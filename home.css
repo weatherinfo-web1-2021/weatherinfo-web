@@ -8,6 +8,19 @@ body {
   align-items: center;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding-left
+}
+
 /* Home header */
 
 .home-header {
