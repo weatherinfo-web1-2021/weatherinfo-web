@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin-top: 100px;
   height: 100vh;
 }
 
@@ -14,9 +14,57 @@ body {
 }
 
 /* navbar */
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  background: url("/img/clouds.jpg");
+}
+
+.home-header .header-title {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  color: black;
+  margin: 10px;
+}
+
+.home-header .header-title .text {
+  font-size: 2rem;
+  margin-right: 10px;
+  letter-spacing: -2px;
+}
+
 .navBar {
-  background-color: royalblue;
-  height: 65px;
+  width: 80%;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.navBar .menu {
+  padding: 10px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
 }
 
 /* aside */
@@ -52,7 +100,6 @@ body {
   flex-direction: column;
   gap: 60px;
   padding: 50px;
-  background-image: url("images/clouds.jpg");
 }
 
 .section {
