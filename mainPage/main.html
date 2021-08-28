@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeatherInfo</title>
-    <link rel="stylesheet" href="home.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <title>Today's weather</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="home-header">
       <div class="header-title">
         <div class="text">날씨 정보</div>
@@ -29,7 +24,7 @@
           <a href="#">여행지 날씨</a>
         </li>
         <li class="menu">
-          <a href="/fashionPage/fashion.html">오늘 뭐입지</a>
+          <a href="#">오늘 뭐입지</a>
         </li>
         <li class="menu">
           <a href="#">오늘 뭐먹지</a>
@@ -41,17 +36,30 @@
           <a href="#">오늘 내기분</a>
         </li>
         <li class="menu">
-          <a href="/settingPage/setting.html">설정</a>
+          <a href="#">설정</a>
         </li>
         <input type="button" value="night" />
       </ul>
     </header>
 
-    <section class="home-greeting">
-      <h2 class="greeting__message">안녕하세요, OO님</h2>
-      <span class="greeting__notice">
-        오늘은 하루종일 비가 오네요. 우산을 챙겨주세요!
-      </span>
+    <!-- section -->
+    <section class="containers">
+      <div class="container1">
+        <div class="todayWeather">
+          <h3>오늘의 날씨</h3>
+          <div class="weather"></div>
+        </div>
+        <div class="fineDustAndCovid">
+          <h3>오늘의 미세먼지와 코로나 확진자 수</h3>
+          <div class="finedust"></div>
+          <div class="covid"></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="timeWeather">
+          <h3>오늘의 시간대별 날씨</h3>
+        </div>
+      </div>
     </section>
   </body>
 </html>
