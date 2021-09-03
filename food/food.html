@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>오늘 뭐 먹지?</title>
     <link rel="stylesheet" href="food.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="food.js"></script>
 </head>
 <body>
     <header class='home-header'>
         <div class="header-title">
-            <div class="text">날씨 정보</div>
+            <h1 class="text">날씨 정보</h1>
             <div class="logo">
                 <i class="fas fa-cloud fa-2x"></i>
             </div>
         </div>
         <ul class="navBar">
             <li class="menu">
-                <a href="#">홈</a>
+                <a href="../home.html">홈</a>
             </li>
             <li class="menu">
                 <a href="#">여행지 날씨</a>
@@ -38,11 +39,45 @@
             <li class="menu">
                 <a href="#">설정</a>
             </li>
-            <input type="button" value='night'>
+            <input class="menu" id="night_day" type="button" value='night' onclick='nightday()'>
         </ul>
     </header>
+    <main class="main">
+        <p class="food-header">
+            <span>오늘의 추천 메뉴: 파전 & 막걸리</span> 
+            <span>
+                <input class="search" type="text" placeholder="검색어를 입력하세요.">
+                <input class="search" type="button" id="search">
+            </span>
+        </p>
+        <div class="phone-container">
+            <div class="Question">비오는날엔 파전&막걸리가 어떤가여?</div>
+            <div class="food-container">
+                <div class="food1">
+                    <span>image</span>
+                    <span>강호동김치전</span>
+                </div>
+                <div class="food2">
+                    <span>image</span>
+                    <span>강호동김치전</span>
+                </div>
+                <div class="food3">
+                    <span>image</span>
+                    <span>강호동김치전</span>
+                </div>
+            </div>
+            <div class="Answer" id="Answer1">
+                <div class="reaction">
+                    <span>좋아요</span><span>음.. 다른 메뉴 추천해주세요</span>
+                </div>
+                <div>
 
-
-
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        안녕하세요
+    </footer>
 </body>
 </html>
