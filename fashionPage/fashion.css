@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin-top: 100px;
+  height: 65px;
+}
+
+/* navbar */
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  background: url("/img/clouds.jpg");
+}
+
+.home-header .header-title {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  color: black;
+  margin: 10px;
+}
+
+.home-header .header-title .text {
+  font-size: 2rem;
+  margin-right: 10px;
+  letter-spacing: -2px;
+}
+
+.navBar {
+  width: 80%;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.navBar .menu {
+  padding: 10px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  height: 939px;
+  padding: 10px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  /* border: 1px solid black; */
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+}
+.container2 {
+  display: flex;
+  flex-grow: 1;
+  /* border: 1px solid black; */
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+}
+.container3 {
+  display: flex;
+  flex-grow: 2;
+  /* border: 1px solid black; */
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.todayWeather,
+.previousStyle {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  flex-grow: 0.5;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 1358px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.todayStyle {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 1358px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+h3 {
+  flex-grow: 0.2;
+}
+
+.color {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.color div {
+  margin: 10px;
+  flex-grow: 0.1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.weather {
+  display: flex;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.3;
+  padding-left: 10px;
+}
+
+#weatherIcon {
+  width: 90px;
+  margin: 5px;
+}
+
+#temp {
+  width: 90px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#explain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
