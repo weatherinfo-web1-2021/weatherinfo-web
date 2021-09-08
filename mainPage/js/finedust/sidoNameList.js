@@ -39,7 +39,7 @@ export default function SidoNameList({ $target, initialState }) {
   $select.addEventListener("change", (e) => {
     const $findustInfo = document.querySelector(".finedustInfo");
     $findustInfo.innerHTML = `
-    <div class="findustImg"><img src="../img/dust.png"></img><img src="../img/finedust.png"></img></div>
+    <div class="findustImg"><img src="../img/dust.png"/><img src="../img/finedust.png"/></div>
       <div class="finedustGrade">${e.target.value}</div>`;
   });
 }
