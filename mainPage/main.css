@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'MaruBuri-Regular', sans-serif;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -27,22 +32,27 @@ a {
   align-items: center;
   padding: 20px 30px;
   margin-bottom: 50px;
-  background: url("/img/clouds.jpg");
+  background: url('/img/clouds.jpg');
 }
-
+/* 
 .home-header .header-title {
   display: flex;
   align-items: center;
   width: 30%;
   color: black;
   margin: 10px;
+} */
+
+.logo img {
+  width: 35%;
+  display: inline-block;
 }
 
-.home-header .header-title .text {
+/* .home-header .header-title .text {
   font-size: 2rem;
   margin-right: 10px;
   letter-spacing: -2px;
-}
+} */
 
 .navBar {
   width: 80%;
@@ -67,32 +77,29 @@ a {
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
-  height: 939px;
   padding: 10px;
+  width: 100vw;
 }
 
 .container1 {
   display: flex;
-  justify-content: space-around;
-  flex-grow: 2;
+  justify-content: center;
+  flex-grow: 6;
   /* border: 1px solid black; */
-  height: 100px;
+  /* height: 100px; */
   margin: 5px;
   padding: 10px;
 }
 .container2 {
   display: flex;
-  flex-grow: 1;
   /* border: 1px solid black; */
-  height: 100px;
+  /* height: 100px; */
   margin: 5px;
   padding: 10px;
 }
 .container3 {
   display: flex;
-  flex-grow: 1;
   /* border: 1px solid black; */
-  height: 100px;
   margin: 5px;
   padding: 10px;
 }
@@ -103,7 +110,7 @@ a {
   flex-direction: column;
   border: 1px solid black;
   padding: 20px;
-  flex-grow: 0.5;
+  flex-grow: 1;
   margin: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px gray;
@@ -115,7 +122,7 @@ a {
   flex-grow: 0.5;
   border-radius: 5px;
   border: 1px solid black;
-  margin: 5px;
+  margin: 10px;
   justify-content: center;
 }
 
@@ -143,9 +150,9 @@ h3 {
   flex-grow: 0.2;
 }
 
-.weather {
+/* .Todayweather {
   display: flex;
-}
+} */
 
 .weatherInfo {
   display: flex;
@@ -172,6 +179,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .findustImg {
@@ -185,4 +193,114 @@ h3 {
   height: 50px;
   width: 50px;
   margin-right: 50px;
+}
+
+canvas {
+  display: flex;
+  margin-top: 30px;
+}
+
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3 {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-family: 'MaruBuri-Regular', sans-serif;
+}
+
+.weekWeather {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+tr,
+td {
+  padding: 10px;
+}
+
+.dayAndDate {
+  font-size: 20px;
+}
+
+.temp {
+  font-size: 23px;
+  font-family: -apple-system, sans-serif;
+}
+
+.TodayWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.TodayWeather .time {
+  padding: 5px;
+}
+
+.TodayWeather .icon_container {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.TodayWeather .icon_container .letter_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+}
+
+.TodayWeather .alertweather_humidity {
+  padding-top: 10px;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.3;
+  padding-left: 10px;
+}
+
+.BytimeWeather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vh;
+  margin: 20px;
+}
+
+.BytimeWeather .t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 0.2px dotted black;
+  border-right: 0.2px dotted black;
+  padding: 5px;
+}
+
+.BytimeWeather .t1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 0.2px dotted white;
+  border-right: 0.2px dotted black;
+  padding: 5px;
+}
+
+.BytimeWeather .t2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 0.2px dotted black;
+  border-right: 0.2px dotted white;
+  padding: 5px;
 }

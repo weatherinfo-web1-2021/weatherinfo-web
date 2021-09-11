@@ -11,6 +11,11 @@ body {
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'MaruBuri-Regular', sans-serif;
+}
+
+html {
+  font-size: 16px;
 }
 
 li,
@@ -21,6 +26,11 @@ a {
 }
 
 /* Home header */
+
+.logo img {
+  width: 35%;
+  display: inline-block;
+}
 
 .home-header {
   position: absolute;
