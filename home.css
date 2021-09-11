@@ -1,11 +1,23 @@
 body {
-  background: url(/img/bg\ image.jpeg) center/cover no-repeat;
+  background: url(/img/clouds.jpg) center/cover no-repeat;
   width: 100vw;
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 /* Home header */
