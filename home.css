@@ -1,5 +1,5 @@
 body {
-  background: url(/img/bg\ image.jpeg) center/cover no-repeat;
+  background: url(/img/clouds.jpg) center/cover no-repeat;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -8,7 +8,29 @@ body {
   align-items: center;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'MaruBuri-Regular', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 /* Home header */
+
+.logo img {
+  width: 35%;
+  display: inline-block;
+}
 
 .home-header {
   position: absolute;

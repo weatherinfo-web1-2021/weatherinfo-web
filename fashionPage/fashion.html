@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Fashion</title>
+    <link rel="stylesheet" href="fashion.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="home-header">
+      <div class="header-title">
+        <div class="text">날씨 정보</div>
+        <div class="logo">
+          <i class="fas fa-cloud fa-2x"></i>
+        </div>
+      </div>
+      <ul class="navBar">
+        <li class="menu">
+          <a href="../home.html">홈</a>
+        </li>
+        <li class="menu">
+          <a href="#">여행지 날씨</a>
+        </li>
+        <li class="menu">
+          <a href="../fashionPage/fashion.html">오늘 뭐입지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 뭐먹지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 뭐듣지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 내기분</a>
+        </li>
+        <li class="menu">
+          <a href="../settingPage/setting.html">설정</a>
+        </li>
+        <input type="button" value="night" />
+      </ul>
+    </header>
+
+    <!-- section -->
+    <section class="containers">
+      <div class="container1">
+        <div class="todayWeather">
+          <h3>오늘의 날씨</h3>
+          <div class="weather">
+            <div class="weatherInfo">
+              <img id="weatherIcon" src="/img/sun.png" alt="sunny" />
+              <div id="temp">26℃</div>
+            </div>
+            <div id="explain">오늘은 어제보다 2℃ 낮습니다</div>
+          </div>
+        </div>
+        <div class="previousStyle">
+          <h3>어제의 추천 스타일</h3>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="colors">
+          <h3>오늘의 추천 컬러</h3>
+          <div class="color">
+            <div style="background-color: yellow">노란색</div>
+            <div style="background-color: skyblue">하늘색</div>
+            <div style="background-color: pink">분홍색</div>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="todayStyle">
+          <h3>오늘의 추천 스타일</h3>
+          <div class="clothes">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="setting.css" />
+    <title>Setting</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <header class="home-header">
+      <div class="header-title">
+        <div class="logo">
+          <a href="../home.html"
+            ><img src="../img/reallogo.png" alt="Main Logo"
+          /></a>
+        </div>
+      </div>
+      <ul class="navBar">
+        <li class="menu">
+          <a href="../mainPage/main.html">홈</a>
+        </li>
+        <li class="menu">
+          <a href="#">여행지 날씨</a>
+        </li>
+        <li class="menu">
+          <a href="../fashionPage/fashion.html">오늘 뭐입지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 뭐먹지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 뭐듣지</a>
+        </li>
+        <li class="menu">
+          <a href="#">오늘 내기분</a>
+        </li>
+        <li class="menu">
+          <a href="../settingPage/setting.html">설정</a>
+        </li>
+        <input type="button" value="night" />
+      </ul>
+    </header>
+
+    <!-- side bar -->
+    <main class="main">
+      <aside>
+        <button class="btn">내 프로필</button>
+        <button class="btn">내 멤버십</button>
+        <button class="btn">알림 설정</button>
+      </aside>
+
+      <!-- contents -->
+      <div class="sections">
+        <section class="section">
+          <img class="edit" src="../img/pencil.png" alt="프로필 사진" />
+          <div class="section1">
+            <img
+              class="profileImg"
+              src="../img/profile.png"
+              alt="프로필 사진"
+            />
+            <div class="profile-text">
+              <h2 class="nickname">병아리</h2>
+              <h3>아직 다 자라지 않은 닭의 새끼</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section2">
+          <form action="">
+            <div class="info setting__email">
+              <span>이메일</span>
+              <input type="text" />
+            </div>
+            <div class="info setting__name">
+              <span>이름</span>
+              <input type="text" />
+            </div>
+            <div class="info setting__occupation">
+              <span>직업</span>
+              <input type="text" />
+            </div>
+            <div class="info setting__phoneNumber">
+              <span>전화번호</span>
+              <input
+                type="tel"
+                placeholder="010-1234-5678"
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              />
+            </div>
+          </form>
+          <button class="changed">변경</button>
+        </section>
+
+        <section class="section chagePassword">
+          <h3>비밀번호 변경</h3>
+          <span>영문 숫자 조합 8자 이상 입력해주세요</span>
+          <form action="">
+            <input type="password" placeholder="이전 비밀번호" />
+            <input type="password" placeholder="새 비밀번호" />
+            <input type="password" placeholder="비밀번호 확인" />
+          </form>
+          <button>비밀번호 변경</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
